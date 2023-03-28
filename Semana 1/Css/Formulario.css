@@ -1,0 +1,27 @@
+
+
+.titulos1{
+    font-size: center;
+    font-family: sans-serif;
+    color: rgb(173, 144, 49);
+}
+.subtitulo{
+    font-family: sans-serif;
+    color: rgb(209, 235, 62);
+}
+
+body{
+    background-color:rgb(61, 57, 51);
+    font-family: sans-serif;
+    font-size: 1em;
+    color: rgb(245, 212, 142);
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: auto;
+   
+}
+
+input, select, option{
+    border-radius: 5px;
+}
