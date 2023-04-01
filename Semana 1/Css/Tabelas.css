@@ -1,0 +1,63 @@
+/* Estilo para toda a página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(209, 252, 252);
+  }
+  
+  /* Estilo para as tabelas */
+  table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0.5em;
+  }
+  
+  th,
+  td {
+    padding: 0.5em;
+  }
+  
+  th {
+    background-color: #ddd;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilo para o formulário de pesquisa */
+  form {
+    display: inline-block;
+    margin-bottom: 1em;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 0.5em;
+  }
+  
+  input[type="text"] {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    padding: 0.5em 1em;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }

@@ -9,41 +9,42 @@
 </head>
 <body> 
   
-  <h1 class="titulos1"> Lados da aliança</h1>
-  <h2 class="subtitulo"> Escolha com sabedoria</h2>
-  
-  <div class="nome"> 
-    <form action="processar_formulario.php" method="POST">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required><br>
-  </div>
-  <div class="email">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
-  </div>
-  <div class="pais">
-        <label for="pais">País:</label>
-        <select id="pais" name="pais">
-          <option value="Brasil">Brasil</option>
-          <option value="Estados Unidos">Estados Unidos</option>
-          <option value="Rússia">Rússia</option>
-          <option value="China">China</option>
-  </div>
-  <div class="lado">
-        </select><br>  
-        <label>Escolha o seu lado:</label>
-        <input type="radio" id="lado1" name="lado" value="Aliados">
-        <label for="lado1">Aliados</label>
-        <input type="radio" id="lado2" name="lado" value="Eixo">
-        <label for="lado2">Eixo</label><br>
-  </div>
-  <div class="5">
-        <label for="mensagem">Mensagem:</label><br>
-        <textarea id="mensagem" name="mensagem" rows="5" cols="50"></textarea><br>
-  </div>
-  <div class="6">
-        <input type="submit" value="Enviar">
-      </form>
-  </div>
+      <div class="borda">   
+            <div class="titulos">
+            <h1>Lados da aliança</h1>
+            <h2>Escolha com sabedoria</h2>
+     </div>
+      <form class="form">       
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+      <div class="email">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+      </div>
+      <div class="pais">
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+            <option value="Brasil">Brasil</option>
+            <option value="Estados Unidos">Estados Unidos</option>
+            <option value="Rússia">Rússia</option>
+            <option value="China">China</option>
+            </select><br>  
+      </div>
+      <div>
+            <label>Escolha o seu lado:</label>
+            <input type="radio" id="lado1" name="lado" value="Aliados">
+            <label for="lado1">Aliados</label>
+            <input type="radio" id="lado2" name="lado" value="Eixo">
+            <label for="lado2">Eixo</label><br>
+      </div>
+      <div class="5">
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="5" cols="50"></textarea><br>
+      </div>
+      <div class="6">
+            <input type="submit" value="Enviar">
+      </div>
+      </div>
+  </form>
 </body>
 </html>
