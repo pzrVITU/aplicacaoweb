@@ -31,9 +31,12 @@ body {
   nav ul li a:hover {
     background-color: #dfdbdb; /* Definir cor de fundo ao passar o mouse sobre os links */
   }
+  /*Define a cor da palavra "Menu"*/
   .cor{
     color: rgb(255, 255, 255);
   }
+
+  /*Define a cor dos titulos*/
   h1{
     color: rgb(255, 255, 255);
   }

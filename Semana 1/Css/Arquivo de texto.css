@@ -1,22 +1,21 @@
-/* Estilos para o corpo da página */
+/*  body da página. Ele remove qualquer margem (espaço vazio) em torno do corpo da página, define a família de fontes como Arial ou qualquer fonte sans-serif (sem serifa), e define a cor de fundo como um tom de azul esverdeado claro.*/
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: rgb(209, 252, 252);
 }
 
-/* Estilos para os títulos das seções */
+/* Estes estilos são para os títulos de seção da página. O h1 tem uma margem superior de 40 pixels, um tamanho de fonte de 36 pixels e um alinhamento centralizado. O h2 tem um alinhamento centralizado. */
 h1 {
     margin-top: 40px;
     font-size: 36px;
     text-align: center;
 }
-
 h2 {
     text-align: center;
 }
 
-/* Estilos para as linhas horizontais */
+/*Este trecho define os estilos para as linhas horizontais da página. Ele remove a borda padrão da linha, define uma borda superior sólida de 2 pixels na cor #333, uma margem superior e inferior de 40 pixels e uma largura de 80% da largura disponível.*/
 hr {
     border: none;
     border-top: 2px solid #333;
@@ -24,7 +23,7 @@ hr {
     width: 80%;
 }
 
-/* Estilos para os parágrafos */
+/* Este trecho define os estilos para os parágrafos da página. Ele define uma margem superior e inferior de 20 pixels e uma margem lateral automática (centralizada), define uma largura máxima de 600 pixels, uma altura de linha de 1,5 vezes a altura da fonte e um alinhamento justificado. */
 p {
     margin: 20px auto;
     max-width: 600px;
@@ -32,7 +31,7 @@ p {
     text-align: justify;
 }
 
-/* Estilos para as listas */
+/* Este trecho define os estilos para as listas não ordenadas da página. Ele define uma margem superior e inferior de 20 pixels e uma margem lateral automática (centralizada), uma largura máxima de 600 pixels, um estilo de marcador de disco e um preenchimento esquerdo de 20 pixels. O li tem uma margem inferior de 10 pixels.*/
 ul {
     margin: 20px auto;
     max-width: 600px;
@@ -44,14 +43,14 @@ li {
     margin-bottom: 10px;
 }
 
-/* Estilos para os links */
+/*Este trecho define os estilos para os links da página. Ele define a cor do texto como #333 (um tom escuro de cinza), remove o sublinhado padrão e define o peso da fonte como negrito.*/
 a {
     color: #333;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* Estilos para as seções de referência */
+/*Esse trecho define os estilos para as seções de referência da página. Ele define uma margem superior de 20 pixels, um tamanho de fonte de 18 pixels e um alinhamento centralizado para o título da seção.  */
 h3 {
     margin-top: 20px;
     font-size: 18px;
