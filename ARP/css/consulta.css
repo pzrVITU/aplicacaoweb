@@ -1,0 +1,68 @@
+/* Estilo para o título principal */
+h1,h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Estilo para os formulários de busca */
+  form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  label {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #006B95;
+  }
+  
+  /* Estilo para a tabela de pacientes */
+  table {
+    margin-top: 50px;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  th {
+    background-color: #008CBA;
+    color: #fff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Consulta de pacientes</title>
+    <link rel="stylesheet" href="./css/consulta.css">
+  </head>
+  <body>
+    <h1>Consulta de pacientes</h1>
+    
+    <form>
+      <label for="nome">Buscar por nome:</label>
+      <input type="text" id="nome" name="nome">
+      <button type="submit">Buscar</button>
+    </form>
+    
+    <form>
+      <label for="cpf">Buscar por CPF:</label>
+      <input type="text" id="cpf" name="cpf">
+      <button type="submit">Buscar</button>
+    </form>
+    
+    <h2>Lista de pacientes cadastrados:</h2>
+    
+    <table>
+      <tr>
+        <th>Nome</th>
+        <th>CPF</th>
+        <th>Data de nascimento</th>
+        <th>Telefone</th>
+      </tr>
+      <tr>
+        <td>João da Silva</td>
+        <td>123.456.789-00</td>
+        <td>01/01/1980</td>
+        <td>(11) 1234-5678</td>
+      </tr>
+      <tr>
+        <td>Maria Oliveira</td>
+        <td>987.654.321-00</td>
+        <td>02/02/1990</td>
+        <td>(11) 9876-5432</td>
+      </tr>
+      <tr>
+        <td>Antônio Santos</td>
+        <td>456.789.123-00</td>
+        <td>03/03/1970</td>
+        <td>(11) 4567-8912</td>
+      </tr>
+    </table>
+  </body>
+</html>

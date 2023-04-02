@@ -1,0 +1,64 @@
+/* Estilo para o título principal */
+h1, h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Estilo para o formulário de adição de medicamentos */
+  form {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  label {
+    font-size: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #005F80;
+  }
+  
+  /* Estilo para a lista de medicamentos */
+  ul {
+    margin-top: 30px;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  
+  li {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilo para o botão de remoção de medicamentos */
+  #remover {
+    padding: 5px 10px;
+    background-color: #F44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  #remover:hover {
+    background-color: #D32F2F;
+  }
+  

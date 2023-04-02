@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lista de Medicamentos</title>
+    <link rel="stylesheet" href="./css/remedios.css">
+  </head>
+  <body>
+    <h1>Lista de Medicamentos</h1>
+    
+    <h2>Adicionar Medicamentos:</h2>
+    <form>
+      <label for="medicamento">Medicamento:</label>
+      <input type="text" id="medicamento">
+      <button type="button" onclick="adicionarMedicamento()">Adicionar</button>
+    </form>
+    
+    <h2>Lista de Medicamentos:</h2>
+    <ul id="listaMedicamentos">
+    </ul>
+    
+    <script>
+      function adicionarMedicamento() {
+        // Obter o valor do input
+        var medicamento = document.getElementById("medicamento").value;
+        
+        // Criar um novo item de lista
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(medicamento));
+        
+        // Adicionar o item de lista à lista de medicamentos
+        document.getElementById("listaMedicamentos").appendChild(li);
+        
+        // Limpar o campo de input
+        document.getElementById("medicamento").value = "";
+      }
+      
+      function removerMedicamento() {
+        // Obter a lista de medicamentos
+        var lista = document.getElementById("listaMedicamentos");
+        
+        // Remover o último item da lista
+        lista.removeChild(lista.lastChild);
+      }
+    </script>
+  </body>
+</html>

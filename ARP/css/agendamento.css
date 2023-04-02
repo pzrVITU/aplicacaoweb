@@ -1,0 +1,50 @@
+/* Estilos para o calendário */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background-color: #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+td {
+  text-align: center;
+  padding: 8px;
+}
+
+td:hover {
+  background-color: #f5f5f5;
+}
+
+.today {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.selected {
+  background-color: #2196F3;
+  color: white;
+}
+
+/* Estilos para os horários */
+.horario {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  border: 2px solid #2196F3;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.horario:hover {
+  background-color: #2196F3;
+  color: white;
+}
+
+.horario.selected {
+  background-color: #4CAF50;
+  color: white;
+}

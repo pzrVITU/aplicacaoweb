@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Agendamento de Consulta</title>
+    <link rel="stylesheet" href="./css/agendamento.css">
+
+    <script>
+      // Função para atualizar a seleção de data e hora
+      function atualizarSelecao() {
+        // Obter a data selecionada
+        var dataSelecionada = document.querySelector('.selected-date');
+        
+        // Obter o horário selecionado
+        var horarioSelecionado = document.querySelector('.horario.selected');
+        
+        // Verificar se há data e horário selecionados
+        if (dataSelecionada && horarioSelecionado) {
+          // Obter a data e o horário selecionados
+          var data = dataSelecionada.getAttribute('data-date');
+          var horario = horarioSelecionado.getAttribute('data-horario');
+        }
+      }
+        function atualizarSelecao() {
+          // Obter a data selecionada
+          var dataSelecionada = document.querySelector('.selected-date');
+          if (!dataSelecionada) {
+            alert('Selecione uma data para agendar a consulta.');
+            return;
+          }
+          
+          // Obter o horário selecionado
+          var horarioSelecionado = document.querySelector('.horario.selected');
+          if (!horarioSelecionado) {
+            alert('Selecione um horário para agendar a consulta.');
+            return;
+          }
+          
+          // Exibir a mensagem com as informações
+          var dia = dataSelecionada.textContent;
+          var hora = horarioSelecionado.textContent;
+          var mensagem = 'Sua consulta foi agendada para o dia ' + dia + ' às ' + hora + '.';
+          alert(mensagem);
+        }
+      </script>
+  </head>
+  <body>
+    <h1>Agendamento de Consulta</h1>
+    <h2>Selecione a data e o horário da consulta:</h2>
+    
+    <!-- Calendário -->
+    <table>
+      <tr>
+            <th>D</th>
+            <th>S</th>
+            <th>T</th>
+            <th>Q</th>
+            <th>Q</th>
+            <th>S</th>
+            <th>S</th>
+      </tr>
+      <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+      </tr>
+      <tr>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+      </tr>
+      <tr>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>31</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        
+        <!-- Horários -->
+        <div>
+          <div class="horario">08:00</div>
+          <div class="horario">09:00</div>
+          <div class="horario">10:00</div>
+          <div class="horario">11:00</div>
+          <div class="horario">12:00</div>
+          <div class="horario">13:00</div>
+          <div class="horario">14:00</div>
+          <div class="horario">15:00</div>
+          <div class="horario">16:00</div>
+          <div class="horario">17:00</div>
+        </div>
+        
+        <!-- Botão de agendar -->
+        <button onclick="atualizarSelecao()">Agendar</button>
+        
+        <script>
+          // Adicionar eventos de clique para as células do calendário
+          var celulas = document.querySelectorAll('td');
+          for (var i = 0; i < celulas.length; i++) {
+            celulas[i].addEventListener('click', function(event) {
+              // Limpar a seleção anterior
+              var dataAnterior = document.querySelector('.selected-date');
+              if (dataAnterior) {
+                dataAnterior.classList.remove('today');
+                dataAnterior.classList.remove('selected-date');
+              }
+              
+              // Selecionar a nova data
+              var dataAtual = event.target;
+              dataAtual.classList.add('today');
+              dataAtual.classList.add('selected-date');
+            });
+          }
+          
+          // Adicionar eventos de clique para os horários
+          var horarios = document.querySelectorAll('.horario');
+          for (var i = 0; i < horarios.length; i++) {
+            horarios[i].addEventListener('click', function(event) {
+              // Limpar a seleção anterior
+              var horarioAnterior = document.querySelector('.horario.selected');
+              if (horarioAnterior) {
+                horarioAnterior.classList.remove('selected');
+              }
+              
+              // Selecionar o novo horário
+              var horarioAtual = event.target;
+              horarioAtual.classList.add('selected');
+            });
+          }
+        </script>
+        
