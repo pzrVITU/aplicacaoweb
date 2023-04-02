@@ -1,0 +1,42 @@
+/* Definir estilos para o corpo da página */
+body {
+    margin: 0; /* Remover margens padrão */
+    padding: 0; /* Remover preenchimentos padrão */
+    background-image: url(https://images8.alphacoders.com/126/1265378.jpg);
+    background-size: cover; /* Redimensionar a imagem para preencher todo o espaço disponível */
+    
+  }
+  
+  /* Definir estilos para a navegação */
+  nav ul {
+    list-style: none; /* Remover marcadores padrão */
+    display: flex; /* Tornar a lista um flex-container para melhorar o layout */
+    justify-content: space-between; /* Distribuir o espaço uniformemente entre os itens da lista */
+    background-color: #333; /* Definir a cor de fundo do menu */
+    padding: 10px; /* Adicionar preenchimento ao menu */
+    margin: 0; /* Remover margens padrão */
+  }
+  
+  nav ul li {
+    margin: 0 5px; /* Adicionar margem entre os itens */
+  }
+  
+  nav ul li a {
+    text-decoration: none; /* Remover sublinhado do texto do link */
+    color: #fff; /* Definir a cor do texto do link */
+    padding: 5px; /* Adicionar preenchimento ao texto do link */
+    border-radius: 5px; /* Adicionar borda arredondada aos links */
+  }
+  
+  nav ul li a:hover {
+    background-color: #dfdbdb; /* Definir cor de fundo ao passar o mouse sobre os links */
+  }
+  /*Define a cor da palavra "Menu"*/
+  .cor{
+    color: rgb(255, 255, 255);
+  }
+
+  /*Define a cor dos titulos*/
+  h1{
+    color: rgb(255, 255, 255);
+  }

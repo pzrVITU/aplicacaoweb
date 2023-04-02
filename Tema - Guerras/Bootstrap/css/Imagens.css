@@ -1,0 +1,22 @@
+
+/*Estilização para a pagina completa (Tudo que está no body)*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(209, 252, 252);
+}
+/*Estilização dos titulos*/
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+/*Estilização das imagens*/
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/*Estilização do parágrafo*/
+p {
+    text-align: center;
+}

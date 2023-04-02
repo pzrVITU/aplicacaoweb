@@ -1,0 +1,63 @@
+/* Estilo para toda a página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte para o corpo do documento */
+    background-color: rgb(209, 252, 252); /* Define a cor de fundo do corpo do documento usando uma cor RGB */
+  }
+  
+  /* Estilo para as tabelas */
+  table {
+    margin: 0 auto; /* Define uma margem automática à esquerda e à direita para centralizar a tabela horizontalmente*/
+    border-collapse: collapse; /*Define o comportamento da borda da tabela para que as células compartilhem bordas */
+    background-color: #fff; /*Define a cor de fundo da tabela como branco */
+    width: 80%; /* Define a largura da tabela como 80% da largura do contêiner pai */
+    max-width: 800px;/* Define a largura máxima da tabela como 800 pixels */
+  }
+  
+  caption {
+    font-size: 1.5em; /* Define o tamanho da fonte da legenda da tabela como 1,5 vezes o tamanho da fonte padrão*/
+    font-weight: bold; /* Define o peso da fonte da legenda da tabela como negrito */
+    padding: 0.5em; /* Define o preenchimento para a legenda da tabela */
+  }
+  
+  th,
+  td {
+    padding: 0.5em; /* Define o preenchimento para as células da tabela */
+  }
+  
+  th {
+    background-color: #ddd; /* Define a cor de fundo do cabeçalho da tabela como cinza claro */
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2; /* Define a cor de fundo para as linhas pares da tabela como cinza claro */
+  }
+  
+  /* Estilo para o formulário de pesquisa */
+  form {
+    display: inline-block; /* Define a exibição do formulário como inline-block para que ele possa ser posicionado ao lado de outros elementos em uma linha */
+    margin-bottom: 1em; /* Define uma margem inferior de 1em para o formulário */
+  }
+  
+  label {
+    font-weight: bold;/* Define o peso da fonte do rótulo como negrito */
+    margin-right: 0.5em;/*Define uma margem à direita de 0,5em para o rótulo */
+  }
+  
+  input[type="text"] {
+    padding: 0.5em; /* Define o preenchimento para o campo de entrada de texto */
+    border: 1px solid #ccc; /* Define uma borda sólida de 1 pixel com uma cor cinza claro para o campo de entrada de texto */
+    border-radius: 4px; /* Define um raio de borda de 4 pixels para o campo de entrada de texto */
+  }
+  
+  button[type="submit"] {
+    padding: 0.5em 1em; /* Define o preenchimento para o botão de envio */
+    background-color: #4CAF50; /* Define a cor de fundo do botão de envio como verde */
+    color: #fff; /* Define a cor do texto do botão de envio como branco */
+    border: none; /*Remove a borda do botão de envio*/
+    border-radius: 4px; /* Define um raio de borda de 4 pixels para o botão de envio */
+    cursor: pointer; /*Define o cursor como um ponteiro quando o mouse passa sobre o botão de envio */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;  /* Define a cor de fundo do botão de envio como um tom mais escuro de verde quando o mouse passa sobre ele */
+  }

@@ -1,0 +1,100 @@
+/*Define a fonte, cor de fundo, margem e preenchimento do corpo da página*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(209, 252, 252);
+  }
+  
+  /*Define o estilo da div com uma borda sólida de 2px na cor preta, preenchimento interno de 20px e margem de 20px, e largura máxima de 600px*/
+  .borda {
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #fff;
+  }
+  
+  /*Define o alinhamento central e margem inferior de 30px dos títulos */
+  .titulos {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Define o tamanho e margem inferior do título h1 */
+  .titulos h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  /* Define o tamanho e margem superior do título h2 */
+  .titulos h2 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+/* Estilo do formulário - Define a exibição de flexbox para o formulário com direção de coluna */
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Define o estilo da etiqueta do formulário com negrito e margem inferior de 10px */
+  .form label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Define o estilo de entrada, seleção e área de texto do formulário com preenchimento interno de 10px, margem inferior de 20px, borda arredondada de 5px, borda sólida de 1px na cor cinza claro e tamanho da fonte de 16px */
+  .form input,
+  .form select,
+  .form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  /* Define o estilo do botão de opção e da caixa de seleção do formulário com margem direita de 10px */
+  .form input[type="radio"],
+  .form input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Define o estilo da área de texto do formulário com desativação da redimensionamento */
+  .form textarea {
+    resize: none;
+  }
+  
+  /* Define o estilo do botão de envio do formulário com cor de fundo preta, cor de texto branca, borda sem cor, borda arredondada de 5px, preenchimento interno de 10px e 20px, tamanho da fonte de 18px e cursor em ponteiro */
+  .form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  /* Define o estilo do botão de envio do formulário quando o mouse estiver sobre ele com a cor de fundo*/
+  
+  .form input[type="submit"]:hover {
+    background-color: #444;
+  }
+  
+  /* Estilo específico do email e país */
+  .email,
+  .pais {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /*email input, .pais select especifica a largura dos elementos input dentro da classe email e dos elementos select dentro da classe pais, e ajusta o box-sizing para border-box, que inclui a borda e o preenchimento nos cálculos de largura e altura total do elemento.*/
+  .email input,
+  .pais select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
