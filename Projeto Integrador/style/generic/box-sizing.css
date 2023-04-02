@@ -1,0 +1,4 @@
+/* box-sizing: define a propriedade "box-sizing" para o valor "border-box" para todos os elementos da página usando o seletor universal (*). */
+*{
+    box-sizing: border-box;
+}

@@ -1,0 +1,94 @@
+/* 
+    box-shadow: define uma borda com medidas 0, 4, 4px e com a cor informada
+    border-radius: cria uma borda arredondada de 20px
+    background-color: define a cor de fundo do elemento
+    padding-top: define o espaçamento superior interno do elemento
+*/
+.ld-table{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    background-color: white;
+    padding-top: 28px;
+}
+
+/* 
+    font-size: define o tamanho da fonte
+    font-weight: define a intensidade da fonte
+    color: define a cor da fonte
+*/
+.ld-table >.head{
+    font-size: calc(var(--ld-font-size-base) + 6px);
+    font-weight: 600;
+    color: var(--ld-color-gray-light);
+}
+
+/* 
+    display: define o tipo de exibição do elemento como uma grade (grid).
+    grid-template-columns: define as colunas da grade com larguras específicas. A primeira coluna é definida como 1 fração (1fr), o que significa que ela ocupará a maior parte do espaço disponível. As outras duas colunas são definidas como 200 pixels de largura cada.
+    padding-left: define um preenchimento interno (padding) à esquerda do elemento com 32 pixels.
+    padding-right: define um preenchimento interno à direita do elemento com 32 pixels.
+*/
+.ld-table >.head >.row{
+    display: grid;
+    grid-template-columns: 1fr 200px 200px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+/* 
+    display: define o tipo de exibição do elemento como uma grade (grid).
+    grid-template-columns: define as colunas da grade com larguras específicas. A primeira coluna é definida como 1 fração (1fr), o que significa que ela ocupará a maior parte do espaço disponível. As outras duas colunas são definidas como 200 pixels de largura cada.
+    padding: define um preenchimento interno (padding) para todos os lados do elemento.
+    border-bottom: define uma borda de 1px, do tipo sólida e com a cor informada
+*/
+.ld-table >.body >.row{
+    display: grid;
+    padding: 24px 32px;
+    grid-template-columns: 1fr 200px 200px;
+    border-bottom: 1px solid var(--ld-color-gray-lighter);
+}
+
+/* 
+    Deleta a última borda da tabela 
+*/
+.ld-table >.body >.row:last-child{
+    border-bottom: none;
+}
+
+/* 
+    font-weight: define a intensidade da fonte
+    margin-bottom: define o espaçamento inferior interno do elemento
+*/
+.ld-table >.body >.row >.title-description >.title{
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* 
+    font-family: define a família da fonte que será utilizada
+    font-weight: define a intensidade da fonte
+*/
+.ld-table >.body >.row >.price{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/* 
+    color: define a cor da fonte
+    margin-right: define o espaçamento a direita externo do elemento
+    cursor: o cursor do mouse será exibido como uma mão, indicando que o elemento é clicável ou interativo, como um link ou botão.
+*/
+.ld-table >.body >.row >.actions >.edit{
+    color: var(--ld-color-primary);
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* 
+    color: define a cor da fonte
+    cursor: o cursor do mouse será exibido como uma mão, indicando que o elemento é clicável ou interativo, como um link ou botão.
+*/
+.ld-table >.body >.row >.actions >.delete{
+    color: var(--ld-color-danger);
+    cursor: pointer;
+}

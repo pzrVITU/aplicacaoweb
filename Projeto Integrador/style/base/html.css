@@ -1,0 +1,10 @@
+/* 
+    background-color: define a cor de fundo
+    font-family: define a fonte utilizada
+    font-weight: define a intensidade da fonte
+*/
+html{
+    background-color: var(--ld-color-gray-lightest);
+    font-family: var(--ld-font-family-base);
+    font-weight: 500;
+}

@@ -1,0 +1,413 @@
+/* 
+	margin: define o espaçamento externo
+	padding: define o espaçamento interno
+*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* ======================== */
+/* 
+	max-width: define um tamanho máximo fixo
+	padding: define o espaçamento interno dos elementos
+	margin-top: define o espaçamento superior externo
+*/
+.ld-wrapper >.container {
+	max-width: 960px;
+	margin-inline: auto;
+	padding: 45px 15px;
+    margin-top: 0px;
+}
+
+/* 
+	margin-bottom: define o espaçamento inferior externo
+*/
+.title {
+	margin-bottom: 50px;
+}
+
+/* 
+    display: define o elemento como um bloco, ou seja, ocupando toda a largura disponível na horizontal e com quebra de linha antes e depois dele.
+*/
+.title span {
+	display: block;
+}
+
+/* 
+	font-size: define o tamanho da fonte
+	text-transform: deixa todas as letras maiúsculas
+	color: define a cor da fonte
+*/
+.title .primary {
+	font-size: clamp(26px, 5vw, 52px);
+	text-transform: uppercase;
+	color: var(--ld-color-gray-dark);
+}
+
+/* 
+	margin-top: define o espaçamento superior externo
+	font-size: define o tamanho da fonte
+	font-weight: define a intensidade da fonte
+	color: define a cor da fonte
+*/
+.title .secondary {
+    margin-top: 10px;
+	font-size: clamp(14px, 2.5vw, 16px);
+	font-weight: 400;
+	color: #adadb3;
+}
+
+/* 
+    display: define o elemento como um container flexível
+*/
+.gallery-wrapper {
+	display: flex;
+}
+
+/* 
+	position: Define a posição do elemento em relação ao fluxo normal do documento, permitindo que ele seja ajustado usando as propriedades de deslocamento, como top e left.
+	isolation: Isola o elemento do seu ambiente, evitando que o seu conteúdo seja afetado por elementos externos, como imagens e gradientes.
+	display: Define o elemento como um contêiner flexível, permitindo que seus filhos sejam organizados em linhas ou colunas.
+	flex: Define a propriedade flex para 1, permitindo que o elemento preencha todo o espaço disponível no contêiner flexível.
+	height: Define a altura do elemento para 500 pixels.
+	background-color: Define a cor de fundo do elemento como preto.
+	padding:  Define um preenchimento de 25 pixels ao redor do conteúdo do elemento.
+	opacity: Define a opacidade do elemento como 1, tornando-o totalmente visível.
+	overflow: Define o comportamento de estouro do conteúdo, ocultando qualquer conteúdo que ultrapasse o tamanho do elemento.
+	transition: Define uma transição suave para as propriedades de flex e opacidade, com uma duração de 0,5 e 0,25 segundos, respectivamente.
+*/
+.gallery-item {
+	position: relative;
+	isolation: isolate;
+	display: flex;
+	flex: 1;
+	height: 500px;
+	background-color: #000;
+	padding: 25px;
+	opacity: 1;
+	overflow: hidden;
+	transition: flex 0.5s, opacity 0.25s;
+}
+
+/* 
+	opacity: 1; define a opacidade do elemento como 100%, ou seja, totalmente visível.
+	flex: 5; define a proporção de como o elemento deve ocupar o espaço disponível em relação aos outros elementos com flex. No caso, o elemento em questão terá uma proporção de 5 para 1 em relação aos outros elementos.
+*/
+.gallery-item:hover {
+	opacity: 1;
+	flex: 5;
+}
+
+/* 
+	opacity: define a opacidade do elemento como 75%
+*/
+.gallery-item:not(:hover) {
+	opacity: 0.75;
+}
+
+/* 
+	position: posiciona a imagem em relação ao elemento pai mais próximo que tenha uma posição definida.
+	top: posiciona a imagem no canto superior direito do elemento pai.
+	z-index: coloca a imagem atrás de todos os outros elementos, permitindo que os demais elementos sejam exibidos sobre ela.
+	width: define a largura e altura da imagem para preencher todo o espaço disponível dentro do elemento pai.
+	object-fit: faz com que a imagem seja redimensionada para preencher completamente a caixa que a contém, mantendo sua proporção original e cortando as partes que excedem a caixa, se necessário.
+*/
+.item-image {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* 
+	align-self: flex-end alinha o item ao final do contêiner em relação ao eixo transversal (ou seja, verticalmente, se a direção principal for horizontal e vice-versa).
+	text-transform: uppercase transforma todo o texto em letras maiúsculas.
+	color: #fff define a cor do texto como branco.
+*/
+.item-description {
+	align-self: flex-end;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+/* 
+	font-size: define o tamanho da fonte
+	background: define a cor do background
+	padding-inline: ela define o preenchimento (espaço) interno horizontal de um elemento em relação à sua borda esquerda e direita. 
+	transform: é usada para mover um elemento verticalmente, ou seja, no eixo Y.
+*/
+.name {
+	font-size: 37px;
+	background: linear-gradient(90deg, #a6e79d, #10c085);
+	padding-inline: 10px;
+	transform: translateY(-10px);
+}
+
+/* 
+	display: inline-block;: faz com que o elemento se comporte como um bloco, mas permitindo que outros elementos sejam exibidos na mesma linha;
+	background: linear-gradient(90deg, #4136d9, #0086c7);: define um fundo gradiente que vai da cor #4136d9 (azul escuro) à cor #0086c7 (azul claro), na direção horizontal;
+	padding: 10px;: adiciona um espaçamento interno de 10 pixels ao redor do conteúdo do elemento;
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);: adiciona uma sombra ao elemento, com deslocamento horizontal e vertical de 0, desfoque de 1 pixel, tamanho de 10 pixels e transparência de 20%;
+	transform: translateY(10px);: aplica uma transformação de translação no eixo vertical, movendo o elemento 10 pixels para baixo em relação à sua posição original.
+*/
+.role {
+	display: inline-block;
+	background: linear-gradient(90deg, #4136d9, #0086c7);
+	padding: 10px;
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+	transform: translateY(10px);
+}
+
+/* 
+	opacity: define a opacidade inicial do elemento como 0, ou seja, ele não é visível.
+	transition: define as propriedades de transição que serão animadas (opacidade e transformação) e seus tempos de duração.
+	transition-delay: define o atraso em segundos antes que a transição comece a ser executada.
+*/
+.name,
+.role {
+	opacity: 0;
+	transition: opacity 0.25s, transform 0.3s;
+	transition-delay: 0.35s;
+}
+
+/* 
+	opacity: define a opacidade do elemento como totalmente visível (opacidade máxima).
+	transform: define a transformação do elemento como uma translação vertical de 0px, o que significa que o elemento não será movido verticalmente.
+*/
+.gallery-item:hover .name,
+.gallery-item:hover .role {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* 
+	transition-delay: define o atraso em segundos antes que a transição comece a ser executada.
+*/
+.gallery-item:not(:hover) .name,
+.gallery-item:not(:hover) .role {
+	transition-delay: 0s;
+}
+
+/* 
+	Esse código é uma media query que faz uma alteração no layout da página caso a largura da tela seja menor ou igual a 768 pixels. Ele muda a direção do fluxo de elementos do contêiner "gallery-wrapper" 
+	de linha para coluna, e define a altura do contêiner para a altura da viewport do dispositivo. Além disso, quando o mouse passa sobre um elemento com a classe "gallery-item", a largura dele é definida
+	como 100% do espaço disponível na direção principal do fluxo, que nesse caso é a altura do contêiner.
+*/
+@media screen and (max-width: 768px) {
+	.gallery-wrapper {
+		flex-direction: column;
+		height: 100vh;
+	}
+
+	.gallery-item:hover {
+		flex-basis: 100%;
+	}
+}
+
+/* 
+	margin-top: define o espaçamento superior externo
+*/
+.ld-wrapper > .search-container
+{
+	margin-top: 20px
+}
+
+/* 
+	padding-top: define o espaçamento superior interno
+	width: define um tamanho fixo
+	display: define o elemento como um bloco, ou seja, ocupando toda a largura disponível na horizontal e com quebra de linha antes e depois dele.
+	margin: alinha verticalmente
+*/
+.search-container{
+    padding-top: 100px;
+    width: 490px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* 
+  	margin: centraliza horizontalmente o elemento dentro de seu contêiner pai.
+	width: define a largura do elemento como 100% da largura do contêiner pai.
+	height: define a altura do elemento como 45 pixels.
+	padding: define o preenchimento interno esquerdo e direito do elemento como 20 pixels e zero pixels para cima e para baixo.
+	font-size: define o tamanho da fonte como o tamanho padrão do elemento pai.
+	border: define uma borda de 1 pixel sólida com a cor #D0CFCE ao redor do elemento.
+	outline: remove a borda destacada que aparece em alguns navegadores quando o elemento é selecionado.
+  */
+  .ld-wrapper > .search-container >#search-bar{
+    margin: 0 auto;
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid #D0CFCE;
+    outline: none;
+  }
+
+  /* 
+  	border-radius: define uma borda arredondada de 50px
+  */
+  .ld-wrapper > .search-container > #search-bar
+  {
+	border-radius: 50px;
+  }
+
+  /* 
+ 	border-radiuds: define uma borda arredondada
+	border: define uma borda de 1px, sólida e com a cor informada
+	transition: define o efeito de transição
+	color: define a cor da fonte 
+  */
+  .ld-wrapper > .search-container > #search-bar > input#search-bar:focus{
+	  border-radius: 5%;
+      border: 1px solid #000000;
+      transition: 0.35s ease;
+      color: #000000;
+  }
+
+  /* 
+  	position: relative;: define o posicionamento do elemento como relativo, ou seja, ele será posicionado em relação à sua posição original no fluxo do documento HTML.
+	float: right;: alinha o elemento à direita, fazendo com que outros elementos flutuem à esquerda dele.
+	width: 75px;: define a largura do elemento como 75 pixels.
+	height: 75px;: define a altura do elemento como 75 pixels.
+	top: -61px;: desloca o elemento 61 pixels para cima em relação à sua posição original.
+	right: -10px;: desloca o elemento 10 pixels para a esquerda em relação à borda direita do seu contêiner.
+  */
+  .ld-wrapper > .search-container > .search-icon{
+    position: relative;
+    float: right;
+    width: 75px;
+    height: 75px;
+    top: -61px;
+    right: -10px;
+  }
+
+  /* 
+ 	max-width: define o tamanho máximo
+	padding: define o espaçamento interno dos elementos 
+  */
+  .container {
+	max-width: 110rem;
+	padding: 1.5rem;
+  }
+
+/* 
+
+*/
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	grid-gap: 1.5rem;
+}
+
+/* 
+	background: define a cor do background
+	color: define a cor da fonte
+	padding: define o espaçamento interno
+	border-radius: define uma borda arredondada
+	overflow: define como um elemento deve se comportar quando seu conteúdo ultrapassa as dimensões definidas para ele. Ela esconde qualquer conteúdo que exceda essas dimensões e não permite que ele seja rolado ou exibido. 
+*/
+.card {
+	background: #262525;
+	color: #fff;
+	padding: 1.5rem;
+	overflow: hidden;
+	border-radius: 0.8rem;
+}
+
+/* 
+	font-family: define a família de fontes a ser usada, que será uma fonte fantasia (como especificado no valor fantasy) ou uma fonte sans-serif caso a fonte fantasia não esteja disponível.
+	font-size: define o tamanho da fonte em 10rem. O rem é uma unidade de medida que se baseia no tamanho da fonte do elemento pai. Por exemplo, se o elemento pai tiver font-size: 16px, então 1rem terá o mesmo tamanho que 16px.
+	letter-spacing: define o espaçamento entre as letras, que será de 0.5rem.
+	color: define a cor do texto, que será um tom escuro de cinza (#1d1d1d).
+	user-select: define se o texto pode ser selecionado pelo usuário. Neste caso, a propriedade está definida como none, o que significa que o texto não pode ser selecionado.
+	transform: aplica uma transformação no elemento, que será uma translação horizontal (translateX) de 7rem, ou seja, o texto será deslocado 7 vezes o tamanho da fonte do elemento pai para a direita.
+	transition: define uma transição para as propriedades que sofrerem alteração. Neste caso, a propriedade transform terá uma duração de transição de 2.5s, o que significa que a mudança de posição do texto levará 2.5 segundos para ocorrer suavemente.
+*/
+.card-title-large {
+	font-family: fantasy, sans-serif;
+	font-size: 10rem;
+	letter-spacing: 0.5rem;
+	color: #1d1d1d;
+    user-select: none;
+	transform: translateX(7rem);
+	transition: transform 2.5s;
+}
+
+/* 
+	margin-bottom: define o espaçamento superior externo
+*/
+.card-title-small {
+	margin-bottom: 1rem;
+}
+
+/* 
+	font-size: define o tamanho da fonte
+	line-height: define a altura da linha
+*/
+.card-description {
+	font-size: 1.4rem;
+	line-height: 1.5;
+}
+
+/* 
+display: define o elemento como sendo um bloco de nível de linha que se ajusta ao tamanho do seu conteúdo.
+width: define a largura e a altura do elemento como 3.5rem, ou seja, 3.5 vezes o tamanho da fonte do elemento (por exemplo, se a fonte fosse 16px, o tamanho do elemento seria 56px).
+border-radius:  define as bordas do elemento como arredondadas em 50% do seu tamanho, fazendo com que ele fique com formato circular.
+display: define que o conteúdo do elemento deve ser centralizado tanto verticalmente quanto horizontalmente utilizando as propriedades do grid layout.
+margin-left: alinha o elemento à direita do seu container, ocupando o espaço restante.
+*/
+.card-cta {
+	display: inline-block;
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	margin-left: auto;
+}
+/* 
+	background-color: quando selecionado define a cor de fundo
+*/
+.card:hover .card-cta {
+	background-color: #262525;
+}
+
+/* 
+	transform: desloca o elemento ao longo do eixo X (horizontalmente) em uma porcentagem de sua própria largura, neste caso movendo-o para fora da tela na direção esquerda
+	color: define a cor da fonte
+*/
+.card:hover .card-title-large {
+	transform: translateX(-115%);
+	color: #fff;
+}
+
+/* 
+	background: radial-gradient: define a cor de fundo no estilo gradiente quando selecionado
+*/
+.card.servicos:hover {
+	background: radial-gradient(
+		at 20% 128%,
+		#a6e988 20%,
+		#4ebe79 60%,
+		#00aa95 90%
+	);
+}
+
+/* 
+	background: radial-gradient: define a cor de fundo no estilo gradiente quando selecionado
+*/
+.card.noticias:hover {
+	background: radial-gradient(
+		at 20% 128%,
+		#a6e988 20%,
+		#4ebe79 60%,
+		#00aa95 90%
+	);
+}
+

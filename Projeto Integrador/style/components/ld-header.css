@@ -1,0 +1,101 @@
+/* 
+    height: define a altura do elemento de cabeçalho;
+    width: define a largura do elemento de cabeçalho;
+    background: define a cor de fundo do elemento de cabeçalho;
+    box-shadow: adiciona uma sombra ao elemento de cabeçalho;
+    position: define que o elemento de cabeçalho deve ser fixo na página, ou seja, ele permanecerá na mesma posição, mesmo que a página seja rolada;
+    z-index: define a ordem de empilhamento do elemento em relação aos outros elementos da página;
+    left e top: definem as coordenadas do elemento de cabeçalho em relação à janela do navegador. No caso, left: 0 e top: 0 definem que o elemento de cabeçalho deve ser posicionado no canto superior esquerdo da janela do navegador.
+*/
+.ld-header{
+    height: var(--ld-header-size);
+    width: 100%;
+    background: black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    z-index: 1; /* Para os elementos da tela não sobrepor o header */
+    left: 0;
+    top: 0;
+}
+
+/* 
+    max-width: define a largura máxima do elemento como o valor da variável CSS --ld-main-wrapper
+    margin: define margens automáticas horizontalmente, centralizando o elemento na horizontal
+    display: define o valor flex para a propriedade display, transformando o elemento em um container flexível
+    justify-content: centraliza os itens dentro do container flexível horizontalmente
+*/
+.ld-header >.wrapper{
+    max-width: var(--ld-main-wrapper);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* 
+    Temos 3 divs dentro de wrapper.-has-user
+    Aqui definimos o comportamento para cada uma delas 
+*/
+.ld-header >.wrapper.-has-user{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+/* 
+    height: define a altura com base na variável informada
+    padding: define o espaçamento interno do elemento
+*/
+.ld-header >.wrapper >.logo-wrapper{
+    height: var(--ld-header-size);
+    padding: 12px 0;
+}
+
+/* 
+    height: define uma altura de 100% do elemento
+*/
+.ld-header >.wrapper >.logo-wrapper >.image{
+    height: 100%;
+}
+
+/* 
+    display: define o elemento como um contêiner flexível
+    align-items: centraliza os itens verticalmente dentro do contêiner flexível
+    margin-left: define um espaçamento a esquerda externo
+*/
+.ld-header >.wrapper >.menu{    
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+/* 
+    display: define o elemento como um contêiner flexível
+    align-items: centraliza os itens verticalmente dentro do contêiner flexível
+    justify-content: centraliza os itens horizontalmente dentro do contêiner flexível. 
+*/
+.ld-header > .wrapper > .menu > nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 
+    color: define a cor da fonte
+    font-size: define o tamanho da fonte com base na variável
+    text-decoration: remove a decoração de texto sublinhado
+    margin-left: define um espaçamento a esquerda externo
+    padding-right: define um espaçamento interno a direita
+    font-weight: define a intensidade da fonte
+  */
+  .ld-header > .wrapper > .menu > nav > a {
+    color: #00aa95;
+    font-size: calc(var(--ld-font-size-base) + 8px);
+    text-decoration: none;
+    margin-left: 0 16px;
+    padding-right: 10px;
+    font-weight: 600;
+  }
+  
+  /* Define a cor da tag a do menu quando o mouse estiver por cima */
+  .ld-header > .wrapper > .menu> nav > a:hover {
+    color: #ffffff;
+  }

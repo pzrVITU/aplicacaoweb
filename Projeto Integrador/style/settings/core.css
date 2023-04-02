@@ -1,0 +1,4 @@
+/* Estilização da variável que servirá para definir o tamanho padrão do header */
+:root{
+    --ld-header-size: 100px;
+}

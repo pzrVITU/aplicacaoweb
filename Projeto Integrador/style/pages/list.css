@@ -1,0 +1,30 @@
+/* 
+    margin-top: define uma margem superior interna
+    display: define o elemento como um container flexível
+    width: define a largura do elemento como 100% do seu container pai
+    justify-content: alinha os itens filhos do elemento com um espaço igual entre eles, de modo que o primeiro e o último item fiquem nas extremidades do container.
+*/
+.ld-list >.ld-wrapper >.main-content >.title-button{
+    margin-top: 70px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* 
+    font-size: define o tamanho da fonte
+    font-weight: define a intensidade da fonte
+*/
+.ld-list >.ld-wrapper >.main-content >.title-button >.title{
+    font-size: calc(var(--ld-font-size-base) + 30px);
+    font-weight: 700;
+}
+
+/* 
+    margin-top: define o espaçamento superior interno
+*/
+.ld-list >.ld-wrapper >.main-content >.table-wrapper{
+    margin-top: 32px;
+}
+
+

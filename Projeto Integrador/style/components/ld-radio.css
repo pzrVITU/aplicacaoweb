@@ -1,0 +1,79 @@
+/* 
+    position: define que o elemento é posicionado em relação ao seu posicionamento normal.
+    padding-left: define o preenchimento interno (padding) do lado esquerdo do elemento como 32 pixels.
+    padding-top: define o preenchimento interno (padding) do topo do elemento como 2 pixels.
+    cursor: define que o cursor do mouse mude para a forma de mão quando estiver sobre o elemento, indicando que ele é clicável.
+    font-size: define o tamanho da fonte como a soma do tamanho base de fonte (definido em uma variável CSS) com 8 pixels.
+    font-family: define a fonte utilizada como a fonte base definida em uma variável CSS. 
+*/
+.ld-radio{
+    position: relative;
+    padding-left: 32px;
+    padding-top: 2px;
+    cursor: pointer;
+    font-size: calc(var(--ld-font-size-base) + 8px);
+    font-family: var(--ld-font-family-base);
+}
+
+/* Esconde o Radio Button Nativo do Browser */
+.ld-radio > input{
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+/* 
+    Estilo Base do Checkmark 
+    display: define que o elemento deve ser exibido como um bloco e ser alinhado com o texto em torno dele.
+    border-radius: define um raio de borda de 50% para o elemento, tornando-o circular.
+    height: define a altura e a largura do elemento como 22 pixels, tornando-o um pequeno círculo.
+    border: define uma borda de 2 pixels com a cor cinza-escura definida em uma variável CSS.
+    position: define que o elemento é posicionado em relação ao elemento pai mais próximo que tem uma posição definida.
+    top: define que o elemento deve ser posicionado no canto superior esquerdo do elemento pai.
+*/
+.ld-radio >.checkmark{
+    display: inline-block;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    border: 2px solid var(--ld-color-gray-dark);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 
+    Estiliza e preenche o fundo do Checkmark quando radiobutton é checado 
+    background-color: define a cor de fundo
+    border-color: define a cor da borda
+*/
+.ld-radio >input:checked ~ .checkmark{
+    background-color: white;
+    border-color: var(--ld-color-primary);
+}
+
+/*
+    width: define a largura e altura do ponto de destaque como 12 pixels, tornando-o um pequeno círculo.
+    border-radius: define um raio de borda de 50% para o ponto de destaque, tornando-o circular.
+    position: define que o elemento é posicionado em relação ao elemento pai mais próximo que tem uma posição definida.
+    content: adiciona conteúdo vazio ao pseudoelemento ::before.
+    top: define a posição do ponto de destaque como 3 pixels do topo e 3 pixels da esquerda do elemento pai.
+    background-color: define a cor de fundo do ponto de destaque usando uma variável CSS.
+    display: define o ponto de destaque como invisível.
+*/
+.ld-radio >.checkmark:after{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 3px;
+    background-color: var(--ld-color-primary);
+    display: none;
+}
+
+/* Mostra o ponto quando radio button for checado */
+.ld-radio >input:checked ~ .checkmark:after{
+    display: block;
+}

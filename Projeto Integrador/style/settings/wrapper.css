@@ -1,0 +1,5 @@
+/* Estilização da variável global que servirá para definir um tamanho fixo e que irá ser usadas em todo o documento HTML */
+:root{
+    --ld-main-wrapper: 1366px;
+}
+

@@ -1,0 +1,5 @@
+/* Estilização das fontes que podem ser usadas em todo o documento HTML, que servirão como variáveis globais */
+:root{
+    --ld-font-family-base: 'Raleway', sans-serif;
+    --ld-font-size-base: 10px;
+}

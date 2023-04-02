@@ -1,0 +1,44 @@
+/* 
+    background-color: define a cor de fundo do botão com base em uma variável definida em um arquivo CSS separado.
+    color: define a cor do texto do botão como branco.
+    font-family: define a fonte do texto do botão com base em uma variável definida em um arquivo CSS separado.
+    font-size: define o tamanho da fonte do botão como o valor de uma variável definida em um arquivo CSS separado mais 8 pixels.
+    font-weight: define a espessura da fonte do botão como negrito (800).
+    padding: define o preenchimento interno do botão como 20 pixels no topo e na parte inferior e 20 pixels nas laterais.
+    border-radius: define o raio dos cantos do botão como 50 pixels, tornando-o circular.
+    border: remove a borda do botão.
+    width: define a largura do botão como 100% do contêiner pai.
+    cursor: define o cursor do mouse como uma mão ao pairar sobre o botão, indicando que ele é clicável.
+    transition: define uma transição suave de 0,5 segundos para a cor de fundo do botão.
+    text-decoration: remove o sublinhado do texto do botão.
+*/
+.ld-button{
+    background-color: var(--ld-color-primary);
+    color: white;
+    font-family: var(--ld-font-family-base);
+    font-size: calc(var(--ld-font-size-base) + 8px);
+    font-weight: 800;
+    padding: 20px 20px;
+    border-radius: 50px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    text-decoration: none;
+}
+
+/* 
+    font-size: define o tamanho da fonte como a soma do tamanho base de fonte (definido em uma variável CSS) com 4 pixels.
+    font-weight: define a espessura da fonte como "600". Isso faz com que o texto fique um pouco mais negrito que o padrão.
+    padding: define o preenchimento interno (padding) superior e inferior como 15 pixels e o preenchimento interno esquerdo e direito como 30 pixels.
+*/
+.ld-button.-small{
+    font-size: calc(var(--ld-font-size-base) +4px);
+    font-weight: 600;
+    padding: 15px 30px;
+}
+
+/* Quando passamos o mouse em cima o backgound-color assume a prop abaixo */
+.ld-button:hover{
+    background-color: var(--ld-color-primary-light);
+}

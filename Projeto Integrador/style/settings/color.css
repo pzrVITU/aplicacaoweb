@@ -1,0 +1,13 @@
+/* Estilização das cores que podem ser usadas em todo o documento HTML, que servirão como variáveis globais */
+:root{
+    --ld-color-primary: #00aa95;;
+    --ld-color-primary-light: #a5e887;
+
+    --ld-color-danger: #FF2222;
+
+    --ld-color-gray-lightest: #f9fbfb;
+    --ld-color-gray-lighter: rgba(196, 196, 196, 0.35);
+    --ld-color-gray-light: #B8B7B7;
+    --ld-color-gray: #767684;
+    --ld-color-gray-dark: #09090A;
+}

@@ -1,0 +1,72 @@
+/* 
+    max-width: define o tamanho máximo através da utilização da variável global declarada dentro da pasta settings
+    margin: centralizar horizontalmente o elemento
+*/
+.ld-wrapper{
+    max-width: var(--ld-main-wrapper);
+    margin: 0 auto;
+}
+
+/* 
+    position: define o elemento como relativo ao seu posicionamento normal. Isso significa que outros elementos serão posicionados em relação a ele em seu posicionamento normal.
+    display: define que o elemento é um grid.
+    grid-template-columns: define que o grid tem duas colunas com larguras iguais.
+    padding-top: define que o topo do elemento terá uma margem interna (padding) cuja altura é definida em uma variável CSS (--ld-header-size).
+*/
+.ld-wrapper >.main-content{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: var(--ld-header-size);
+}
+
+/*  
+    position: Isso significa que o elemento será posicionado em relação à janela de visualização do navegador, e não em relação ao elemento pai.
+    top: define a distância do topo da janela de visualização em que o elemento será posicionado. Nesse caso, a distância é definida como a altura de um cabeçalho (definida em uma variável CSS) mais 38 pixels.
+    font-size: define o tamanho da fonte do elemento. Nesse caso, o tamanho da fonte é definido como a soma do tamanho base de fonte (definido em uma variável CSS) com 40 pixels.
+    cursor: pointer" define o cursor do mouse como um ponteiro quando o usuário passa o mouse sobre o elemento. Isso indica que o elemento é clicável ou interativo.
+    color: define a cor do texto do elemento. Nesse caso, a cor é definida como uma tonalidade de cinza escuro (definida em uma variável CSS).
+*/
+.ld-wrapper >.main-content >.back-btn{
+    position: fixed;
+    top: calc(var(--ld-header-size) + 38px);
+    font-size: calc(var(--ld-font-size-base) + 40px);
+    cursor: pointer;
+    color: var(--ld-color-gray-dark);
+    text-decoration: none;
+}
+
+/*  
+    grid-template-columns: No caso de "grid-template-columns: 1fr", é definida uma única coluna que ocupa todo o espaço disponível na largura do grid.
+*/
+.ld-wrapper >.main-content.-one-col{
+    grid-template-columns: 1fr;
+}
+
+/*
+    overflow: hidden é usada para esconder o conteúdo que transborda o limite do elemento. Com essa propriedade definida como "hidden", qualquer conteúdo que ultrapasse os limites do elemento será cortado e não será visível para o usuário.
+    position: relative é usado para definir o tipo de posicionamento do elemento. Quando definido como "relative", o elemento será posicionado em relação à sua posição original na página.
+    height: calc(100vh - var(--ld-header-size)) é usada para definir a altura do elemento. Nesse caso, a altura é definida como a altura total da janela do navegador (100vh) menos a altura de um cabeçalho (definida em uma variável CSS). A função "calc()" é usada para calcular a altura com base nesses valores.
+*/
+.ld-wrapper >.main-content >.right{
+    overflow: hidden;
+    position: relative;
+    height: calc(100vh - var(--ld-header-size));
+}
+
+/* 
+    position: absolute;" define o elemento como posicionado absolutamente em relação ao seu contêiner pai.
+    height: 100%;" define a altura do elemento como 100% da altura do contêiner pai.
+    min-width: 100%;" define a largura mínima do elemento como 100% da largura do contêiner pai.
+    top: 0;" define a distância do elemento em relação ao topo do contêiner pai como zero.
+    left: 50%;" define a distância do elemento em relação à esquerda do contêiner pai como 50%.
+    transform: translateX(-50%);" move o elemento para a esquerda em 50% da largura do próprio elemento usando a função "translateX()". Isso centraliza o elemento horizontalmente em relação ao seu contêiner pai.    
+*/
+.ld-wrapper >.main-content >.right >.image{
+    position: absolute;
+    height: 100%;
+    min-width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

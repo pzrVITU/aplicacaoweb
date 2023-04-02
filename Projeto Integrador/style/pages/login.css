@@ -1,0 +1,77 @@
+/* 
+    max-width: define o tamanho máximo
+    margin: alinha centralmente os elementos
+*/
+.ld-login  >.ld-wrapper >.main-content >.left{
+    max-width: 450px;
+    margin: auto auto;
+}
+
+/* 
+    margin-bottom: define o espaçamento inferior externo
+*/
+.ld-login  >.ld-wrapper >.main-content >.left >.radio-buttons{
+    margin-bottom: 42px;
+}
+
+/* 
+    font-size: define o tamanho da fonte
+    font-weight: define a intensidade da fonte
+    margin-bottom: define o espaçamento inferior externo
+*/
+.ld-login  >.ld-wrapper >.main-content >.left >.radio-buttons >.title{
+    font-size: calc(var(--ld-font-size-base) + 8px);
+    font-weight: 800; /* bold */
+    margin-bottom: 16px;
+}
+
+/* 
+    margin-right: define o espaçamento a direita externo
+*/
+.ld-login  >.ld-wrapper >.main-content >.left >.radio-buttons >.buttons >.ld-radio{
+    margin-right: 70px;
+}
+
+/* 
+    font-weight: define a intensidade da fonte
+    margin-bottom: define o espaçamento inferior externo
+*/
+.ld-login  >.ld-wrapper >.main-content >.left >.main-title{
+    font-weight: 800;   
+    margin-bottom: 40px;
+}
+
+/* 
+    font-size: define o tamanho da fonte
+    display: define o elemento como um bloco, ou seja, ocupando toda a largura disponível na horizontal e com quebra de linha antes e depois dele.
+    margin-bottom: define o espaçamento inferior externo
+*/
+.ld-login  >.ld-wrapper >.main-content >.left >.main-title >.up{
+    font-size: calc(var(--ld-font-size-base) + 38px);
+    display: block; /* Quebra a linha */
+    margin-bottom: 7px;
+}
+
+/* 
+    font-size: define o tamanho da fonte
+*/
+.ld-login  >.ld-wrapper >.main-content >.left >.main-title >.down{
+    font-size: calc(var(--ld-font-size-base) + 22px);
+}
+
+/* 
+    display: define o elemento como um bloco, ou seja, ocupando toda a largura disponível na horizontal e com quebra de linha antes e depois dele.
+    font-weight: define a espessura da fonte como "bold" (negrito).
+    font-size: define o tamanho da fonte como uma expressão matemática que adiciona 4 pixels ao valor de uma variável CSS --ld-font-size-base.
+    color: define a cor do texto como uma variável CSS --ld-color-gray.
+    font-family: define o tipo de fonte como "Helvetica".
+    margin-bottom:  define uma margem inferior de 13 pixels ao elemento de texto, separando-o de outros elementos abaixo dele.
+*/
+.ld-login  >.ld-wrapper >.main-content >.left >.steps{
+    display: block;
+    font-weight: 800;
+    font-size: calc(var(--ld-font-size-base) + 4px);
+    color: var(--ld-color-gray);
+    font-family: Helvetica;
+    margin-bottom: 13px;
+}

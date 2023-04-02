@@ -1,0 +1,34 @@
+/* 
+    font-family: - Define a fonte do texto do input como a variável --ld-font-family-base.
+    font-size: - Define o tamanho da fonte do input como a soma da variável --ld-font-size-base com 8 pixels.
+    border: - Remove a borda do input.
+    background: - Remove o fundo do input.
+    border-bottom: - Adiciona uma borda inferior sólida com 1 pixel de largura e a cor especificada pela variável --ld-color-gray-light.
+    outline: Remove o contorno do input quando ele é clicado.
+    transition: - Adiciona uma transição de 0,5 segundos à propriedade border-color do input.
+    padding-bottom: - Adiciona um preenchimento inferior de 10 pixels ao input.
+    width: - Define a largura do input como 100% do espaço disponível.
+    margin-bottom: - Adiciona uma margem inferior de 32 pixels ao input.
+*/
+.ld-input{
+    font-family: var(--ld-font-family-base);
+    font-size: calc(var(--ld-font-size-base) + 8px);
+    border: none;
+    background: none;
+    border-bottom: 1px solid var(--ld-color-gray-light);
+    outline: none; /* Retirar a animação do input ficar preto quando selecionado */
+    transition: border-color 0.5s;
+    padding-bottom: 10px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+/* Quando clico no input, a borda fica com a cor primária */
+.ld-input:focus{
+    border-color: var(--ld-color-primary);
+}
+
+/* color: define a cor do placeholder */
+.ld-input::placeholder{
+    color: var(--ld-color-gray-dark);
+}
